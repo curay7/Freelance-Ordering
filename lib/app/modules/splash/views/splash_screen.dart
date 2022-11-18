@@ -1,4 +1,7 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import '../../../data/flutter_flow/flutter_flow_theme.dart';
 import '../../../data/flutter_flow/flutter_flow_util.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -12,6 +15,20 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   final scaffoldKey = GlobalKey<ScaffoldState>();
+
+  @override
+  void initState() {
+    super.initState();
+
+    Timer(
+      Duration(seconds: 3),
+      () {
+        Get.toNamed("/user");
+      },
+    );
+
+    ///whatever you want to run on page build
+  }
 
   @override
   Widget build(BuildContext context) {
