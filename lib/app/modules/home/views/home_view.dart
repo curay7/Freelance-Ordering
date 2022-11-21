@@ -490,7 +490,7 @@ class _HomeViewState extends State<HomeView> {
                                 alignment: AlignmentDirectional(0, 0),
                                 child: InkWell(
                                   onTap: () async {
-                                    scaffoldKey.currentState!.openDrawer();
+                                    Get.toNamed("/cart");
                                   },
                                   child: Material(
                                     color: Colors.transparent,

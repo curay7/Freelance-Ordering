@@ -1,5 +1,11 @@
 import 'package:get/get.dart';
 
+import 'package:_init/app/modules/cart/bindings/cart_binding.dart';
+import 'package:_init/app/modules/cart/views/cart_view.dart';
+import 'package:_init/app/modules/completed/bindings/completed_binding.dart';
+import 'package:_init/app/modules/completed/views/completed_view.dart';
+import 'package:_init/app/modules/confirm/bindings/confirm_binding.dart';
+import 'package:_init/app/modules/confirm/views/confirm_view.dart';
 import 'package:_init/app/modules/product/bindings/product_binding.dart';
 import 'package:_init/app/modules/product/views/product_view.dart';
 
@@ -37,6 +43,21 @@ class AppPages {
       name: _Paths.PRODUCT,
       page: () => ProductView(),
       binding: ProductBinding(),
+    ),
+    GetPage(
+      name: _Paths.CART,
+      page: () => CartView(),
+      binding: CartBinding(),
+    ),
+    GetPage(
+      name: _Paths.CONFIRM,
+      page: () => ConfirmView(),
+      binding: ConfirmBinding(),
+    ),
+    GetPage(
+      name: _Paths.COMPLETED,
+      page: () => CompletedView(),
+      binding: CompletedBinding(),
     ),
   ];
 }

@@ -72,7 +72,7 @@ class _ProductViewState extends State<ProductView> {
                                 alignment: AlignmentDirectional(0, 0),
                                 child: InkWell(
                                   onTap: () async {
-                                    Get.back();
+                                    Get.toNamed("/home");
                                   },
                                   child: Material(
                                     color: Colors.transparent,
@@ -677,7 +677,7 @@ class _ProductViewState extends State<ProductView> {
                   ),
                   FFButtonWidget(
                     onPressed: () {
-                      print('Button pressed ...');
+                      Get.toNamed("/cart");
                     },
                     text: 'Check Out',
                     options: FFButtonOptions(
